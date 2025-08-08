@@ -1,28 +1,50 @@
+/* Estilo geral do corpo */
 body {
+  background-color: #524C4C;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
-    background-color: lightblue;
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    background-color: #524c4c;
-  }
-  h1 {
-    font-size: 32px;
-    color: #002cb0;
-  }
-  h2{
-    font-size: 15px;
-    color: #002cb0;
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  div {
-    border: 2px solid #000000;
-    border-radius: 9px;
-  }
-  
-  
+/* Container principal */
+.container {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 9px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Cabeçalho */
+header h1 {
+  font-size: 32px;
+  color: #002cb0;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 18px;
+  color: #002cb0;
+  margin-bottom: 20px;
+}
+
+/* Imagem */
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #666;
+}
