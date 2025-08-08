@@ -1,51 +1,190 @@
-/* Estilo geral do corpo */
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #524C4C;
     color: #333;
     font-family: Arial, sans-serif;
     font-size: 16px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Container principal */
-  .container {
+}
+
+/* Container principal */
+.container {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 9px;
     padding: 30px;
     margin: 40px auto;
     width: 90%;
-    max-width: 800px;
+    max-width: 900px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Cabeçalho */
-  header h1 {
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #002cb0;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
     font-size: 32px;
     color: #002cb0;
     margin-bottom: 10px;
-  }
-  
-  header h2 {
+}
+
+header h2 {
     font-size: 18px;
     color: #002cb0;
     margin-bottom: 20px;
-  }
-  
-  /* Imagem */
-  .imagem img {
+}
+
+/* Imagem institucional */
+.imagem img {
     max-width: 100%;
     height: auto;
-    margin-top: 20px;
     border-radius: 8px;
-  }
-  
-  /* Rodapé */
-  footer {
+    margin-bottom: 20px;
+}
+
+/* Seção Sobre */
+.sobre {
     margin-top: 30px;
+    text-align: left;
+}
+
+.sobre h3 {
+    color: #002cb0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.sobre p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Galeria */
+.galeria {
+    margin-top: 30px;
+}
+
+.galeria h3 {
+    color: #002cb0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.fotos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotos img {
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Cursos */
+.cursos {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.cursos h3 {
+    color: #002cb0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cursos p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Contato */
+.contato {
+    margin-top: 30px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #002cb0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #001a80;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
     font-size: 14px;
     color: #666;
-  }
-  
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fotos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
