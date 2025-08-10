@@ -1,51 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Estadual Ambrósio Bini</title>
-
-    <!-- Fonte Poppins via Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS externo -->
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colégio Estadual Ambrósio Bini</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+  <button id="modo-escuro-toggle">🌙</button>
 
-        <header>
-            <h1>Colégio Estadual Ambrósio Bini</h1>
-            <h2>Ensino Fundamental e Médio</h2>
-        </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#noticias">Notícias</a></li>
+        <li><a href="#aluno">Área do Aluno</a></li>
+      </ul>
+    </nav>
 
-        <section class="imagem">
-            <img src="../imagens/bini.png" alt="Brasão do Colégio Ambrósio Bini">
-        </section>
+    <header id="inicio">
+      <h1>Colégio Estadual Ambrósio Bini</h1>
+      <h2>Ensino Fundamental e Médio</h2>
+    </header>
 
-        <section class="sobre">
-            <h3>Sobre o Colégio</h3>
-            <p>Fundado em 1892, o Colégio Estadual Ambrósio Bini tem como missão oferecer educação de qualidade, formando cidadãos conscientes e preparados para o futuro. Localizado em Almirante Tamandaré, o colégio é referência em ensino fundamental e médio na região.</p>
-        </section>
+    <section class="imagem">
+      <img src="../imagens/bini.png" alt="Brasão do Colégio Ambrósio Bini" />
+    </section>
 
-        <section class="Diretor e vice-Diretor">
-            <h3>Diretor e vice-Diretor</h3>
-            <div class="fotos">
-                <img src="../imagens/diretor.png" alt="Diretor">
-                <img src="../imagens/evento2.jpg" alt="vice Diretor">
-            </div>
-        </section>
+    <section class="sobre">
+      <h3>Sobre o Colégio</h3>
+      <p>Fundado em 1892, o Colégio Estadual Ambrósio Bini tem como missão oferecer educação de qualidade...</p>
+    </section>
 
-        <footer>
-            <p>&copy; 2025 Colégio Estadual Ambrósio Bini. Todos os direitos reservados.</p>
-        </footer>
+    <section id="valores" class="valores">
+      <h3>Valores Institucionais</h3>
+      <ul>
+        <li>Respeito e ética</li>
+        <li>Compromisso com a aprendizagem</li>
+        <li>Inclusão e diversidade</li>
+        <li>Formação cidadã</li>
+      </ul>
+    </section>
+
+    <section id="faq" class="faq">
+      <h3>Perguntas Frequentes</h3>
+      <div class="faq-item">
+        <button class="faq-pergunta">Como faço matrícula?</button>
+        <div class="faq-resposta">Você pode entrar em contato pelo WhatsApp ou visitar a secretaria.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta">Quais são os horários das aulas?</button>
+        <div class="faq-resposta">As aulas começam às 7h30 e vão até 12h para o turno da manhã.</div>
+      </div>
+    </section>
+
+    <section id="historia" class="historia">
+      <h3>História do Colégio</h3>
+      <p>Desde sua fundação em 1892, o CEAB tem sido um pilar educacional...</p>
+    </section>
+
+    <section class="direcao">
+      <h3>Diretor e Vice-Diretor</h3>
+      <div class="fotos">
+        <img src="../imagens/diretor.png" alt="Diretor" />
+        <img src="../imagens/vice diretor.jpg" alt="Vice-Diretor" />
+      </div>
+    </section>
+
+    <section id="noticias" class="noticias">
+      <h3>Últimas Notícias</h3>
+      <ul>
+        <li><strong>15/08:</strong> Feira de Ciências com participação dos alunos do 9º ano.</li>
+        <li><strong>20/08:</strong> Reunião de pais e mestres às 19h.</li>
+      </ul>
+    </section>
+
+    <section id="aluno" class="aluno">
+      <h3>Área do Aluno</h3>
+      <ul>
+        <li><a href="#">Apostilas e PDFs</a></li>
+        <li><a href="#">Calendário escolar</a></li>
+        <li><a href="#">Links úteis</a></li>
+      </ul>
+    </section>
+
+    <section class="depoimentos">
+      <h3>Depoimentos</h3>
+      <blockquote>"Estudar no CEAB foi uma experiência transformadora!" — Ex-aluno</blockquote>
+    </section>
+
+    <section class="mapa" id="localizacao">
+      <h3>Localização</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </section>
+
+    <footer id="contato">
+      <p>&copy; 2025 Colégio Estadual Ambrósio Bini. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <a href="https://wa.me/5541991893814" class="whatsapp" target="_blank" title="QUERO CONHECER O CEAB🦉!">
+    <img src="../imagens/whatsapp.png" alt="WhatsApp" />
+  </a>
+
+  <!-- Chat com IA -->
+  <div class="chat">
+    <button id="chat-toggle">💬</button>
+    <div class="chat-box">
+      <div id="chat-mensagens">
+        <p><strong>CEAB:</strong> Olá! Como posso ajudar você hoje?</p>
+      </div>
+      <input type="text" id="chat-input" placeholder="Digite sua mensagem..." />
+      <button id="chat-enviar">Enviar</button>
     </div>
+  </div>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>

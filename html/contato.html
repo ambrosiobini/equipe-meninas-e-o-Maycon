@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - CEAB</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - CEAB</title>
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="site.html">Início</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+  <button id="modo-escuro-toggle">🌙</button>
 
-        <header>
-            <h1>Fale Conosco</h1>
-        </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="site.html">Início</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
 
-        <section class="contato">
-            <form>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
+    <header>
+      <h1>Fale Conosco</h1>
+    </header>
 
-        <footer>
-            <p>&copy; 2025 Colégio Estadual Ambrósio Bini. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+    <section class="contato">
+      <form id="form-contato">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu e-mail" required />
+        <textarea placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+        <p id="mensagem-enviada" style="display: none;">✅ Mensagem enviada com sucesso!</p>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Colégio Estadual Ambrósio Bini. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>
