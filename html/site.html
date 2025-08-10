@@ -96,11 +96,21 @@
 
     <section class="mapa" id="localizacao">
       <h3>Localização</h3>
-      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3606.782964406387!2d-49.2978648!3d-25.311495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcde6ff70d4bbd%3A0xfa3ccdd63df5ed87!2sAmbrosio%20Bini%2C%20C%20E-Ef%20M!5e0!3m2!1spt-BR!2sbr!4v1754787010172!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer id="contato">
       <p>&copy; 2025 Colégio Estadual Ambrósio Bini. Todos os direitos reservados.</p>
+      <section id="treinamento-chat" style="margin-top: 40px;">
+  <h3>🧠 Treinar o Chat</h3>
+  <form id="form-treinamento">
+    <input type="text" id="nova-pergunta" placeholder="Palavra-chave ou pergunta" required />
+    <input type="text" id="nova-resposta" placeholder="Resposta desejada" required />
+    <button type="submit">Adicionar ao Chat</button>
+  </form>
+  <p id="treinamento-feedback" style="margin-top: 10px; color: green;"></p>
+</section>
+
     </footer>
   </div>
 
@@ -121,5 +131,9 @@
   </div>
 
   <script src="../js/script.js"></script>
+  <script src="../js/respostas.js"></script>
+<script src="../js/chat.js"></script>
+<script src="../js/script.js"></script>
+    
 </body>
 </html>
