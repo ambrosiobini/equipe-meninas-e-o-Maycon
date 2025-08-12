@@ -129,11 +129,11 @@ header h2 {
 }
 
 /* Imagem institucional */
-.imagem img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* ou 100vh para ocupar a tela inteira */
 }
 
 /* Seções */
@@ -255,29 +255,37 @@ body.modo-escuro .faq-resposta {
 /* 💬 Chat IA */
 .chat {
   position: fixed;
-  bottom: 80px;
+  bottom: 100px; /* distância do fundo */
   right: 20px;
-  z-index: 1000;
+  z-index: 999;
 }
 
 #chat-toggle {
-  background-color: #002cb0;
+  background-color: #007bff;
   color: white;
   border: none;
-  padding: 12px;
   border-radius: 50%;
-  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
 
 .chat-box {
   display: none;
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  margin-top: 10px;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
   width: 300px;
+  max-height: 400px;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 10px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .chat-box.ativo {
@@ -285,27 +293,24 @@ body.modo-escuro .faq-resposta {
 }
 
 #chat-mensagens {
-  max-height: 200px;
+  max-height: 250px;
   overflow-y: auto;
   margin-bottom: 10px;
-  font-size: 14px;
 }
 
 #chat-input {
-  width: 100%;
+  width: 70%;
   padding: 8px;
-  border-radius: 6px;
   border: 1px solid #ccc;
-  margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 #chat-enviar {
-  width: 100%;
-  padding: 8px;
-  background-color: #002cb0;
+  padding: 8px 12px;
+  background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
 

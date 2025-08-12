@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 🌙 Modo escuro
+  // 🌙 Modo escuro com persistência
   const botaoModoEscuro = document.getElementById("modo-escuro-toggle");
   if (botaoModoEscuro) {
     botaoModoEscuro.addEventListener("click", () => {
       document.body.classList.toggle("modo-escuro");
+      localStorage.setItem("modoEscuro", document.body.classList.contains("modo-escuro"));
     });
+
+    if (localStorage.getItem("modoEscuro") === "true") {
+      document.body.classList.add("modo-escuro");
+    }
   }
 
   // ❓ FAQ interativo

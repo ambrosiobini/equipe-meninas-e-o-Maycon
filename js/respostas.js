@@ -16,4 +16,6 @@ function gerarResposta(pergunta) {
   }
 
   return "Desculpe, não entendi sua pergunta. Você pode reformular ou entrar em contato direto conosco.";
+
+  
 }
