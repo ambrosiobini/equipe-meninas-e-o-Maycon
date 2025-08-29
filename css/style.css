@@ -463,3 +463,65 @@ body.modo-escuro .curtir {
   background-color: #90caf9;
   color: #000;
 }
+/* 📁 Cards de Projetos Enviados */
+.card-projeto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-projeto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ❤️ Botão Curtir */
+.curtir {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.curtir:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsividade */
+@media (max-width: 600px) {
+  .card-projeto {
+    padding: 12px;
+  }
+
+  .curtir {
+    width: 100%;
+  }
+}
+
+/* 🌙 Modo Escuro para Projetos */
+body.modo-escuro .card-projeto {
+  background-color: #2c2c2c;
+  color: #eee;
+}
+
+body.modo-escuro .curtir {
+  background-color: #90caf9;
+  color: #000;
+}
+/* ✨ Animação de Curtida */
+.curtir.animado {
+  animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}

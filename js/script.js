@@ -19,3 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+listaProjetos.addEventListener('click', function(e) {
+  if (e.target.classList.contains('curtir')) {
+    e.target.textContent = 'Curtido ❤️';
+    e.target.disabled = true;
+    e.target.classList.add('animado');
+
+    // Remove a animação após 400ms
+    setTimeout(() => {
+      e.target.classList.remove('animado');
+    }, 400);
+  }
+});
+
