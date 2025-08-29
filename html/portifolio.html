@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="modo-escuro-toggle" class="botao-escuro">🌙</button>
+  <header>
+    <h1>Portfólio do Colégio</h1>
+    <nav>
+      <ul>
+        <li><a href="site.html">Início</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="galeria">
+      <h3>Galeria de Imagens</h3>
+      <!-- Lightbox com imagens -->
+    </section>
+
+    <section class="videos">
+      <h3>Vídeos</h3>
+      <!-- Vídeos incorporados -->
+    </section>
+
+    <section class="envio contato">
+      <h3>Envie seu Projeto</h3>
+      <form id="form-projeto" action="#" method="post">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="descricao" placeholder="Descrição do projeto" required></textarea>
+        <input type="file" name="arquivo" required>
+        <select name="categoria">
+          <option value="">Selecione o curso</option>
+          <option value="informatica">Informática</option>
+          <option value="administracao">Administração</option>
+          <option value="design">Design</option>
+        </select>
+        <button type="submit" class="botao-enviar">Enviar</button>
+      </form>
+    </section>
+
+    <section class="projetos-recentes">
+      <h3>Projetos Recentes</h3>
+      <div id="lista-projetos">
+        <!-- Projetos enviados aparecerão aqui -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Colegio Estadual Ambrosio Bini</p>
+  </footer>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/41991893814" target="_blank">
+      <img src="../imagens/whatsapp.png" alt="WhatsApp">
+    </a>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('modo-escuro-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('modo-escuro');
+    });
+
+    const form = document.getElementById('form-projeto');
+    const listaProjetos = document.getElementById('lista-projetos');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = form.nome.value;
+      const descricao = form.descricao.value;
+      const categoria = form.categoria.value;
+
+      const projeto = document.createElement('div');
+      projeto.classList.add('card-projeto');
+      projeto.innerHTML = `
+        <h4>${nome}</h4>
+        <p>${descricao}</p>
+        <p><strong>Curso:</strong> ${categoria}</p>
+        <button class="curtir">Curtir ❤️</button>
+      `;
+
+      listaProjetos.appendChild(projeto);
+
+      alert('Projeto enviado com sucesso!');
+      form.reset();
+    });
+
+    listaProjetos.addEventListener('click', function(e) {
+      if (e.target.classList.contains('curtir')) {
+        e.target.textContent = 'Curtido ❤️';
+        e.target.disabled = true;
+      }
+    });
+  </script>
+  <!-- Scripts -->
+  <script src="../js/chat.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
+`````

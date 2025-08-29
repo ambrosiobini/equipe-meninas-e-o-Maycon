@@ -400,3 +400,66 @@ body.modo-escuro .chat-box {
 .whatsapp:hover {
   transform: scale(1.1);
 }
+.botao-enviar {
+  padding: 12px;
+  background-color: #002cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-enviar:hover {
+  background-color: #001a80;
+  
+}
+.card-projeto {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-projeto:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.curtir {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.curtir:hover {
+  background-color: #c2185b;
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .card-projeto {
+    padding: 12px;
+  }
+
+  .curtir {
+    width: 100%;
+  }
+}
+
+body.modo-escuro .card-projeto {
+  background-color: #2c2c2c;
+  color: #eee;
+}
+
+body.modo-escuro .curtir {
+  background-color: #90caf9;
+  color: #000;
+}
