@@ -525,3 +525,56 @@ body.modo-escuro .curtir {
   50% { transform: scale(1.2); }
   100% { transform: scale(1); }
 }
+/* Container de vídeos em grid com espaçamento e centralização */
+.videos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ajusta a quantidade de vídeos por linha */
+  gap: 20px;
+  padding: 30px 10px; /* Adiciona mais espaçamento ao redor */
+  justify-items: center;
+  background-color: #f9f9f9; /* Fundo suave para a galeria */
+  border-radius: 10px; /* Cantos arredondados para o container */
+}
+
+/* Estilo dos vídeos */
+.videos-container video {
+  width: 100%;
+  max-width: 450px; /* Limita a largura máxima */
+  height: auto;
+  border-radius: 10px; /* Cantos arredondados */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave e profunda */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+  object-fit: cover; /* Faz o vídeo se ajustar bem no container */
+}
+
+/* Efeito de hover para vídeos */
+.videos-container video:hover {
+  transform: scale(1.03); /* Aumenta levemente o tamanho do vídeo */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra mais intensa ao passar o mouse */
+}
+
+/* Adiciona um efeito de foco nos vídeos quando clicados ou selecionados */
+.videos-container video:focus {
+  outline: none;
+  border: 2px solid #00aaff; /* Borda azul quando o vídeo é focado */
+}
+
+/* Adiciona uma leve cor de fundo no hover do título de cada vídeo */
+.videos-container h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Ajusta o layout responsivo em telas pequenas */
+@media (max-width: 768px) {
+  .videos-container {
+    grid-template-columns: 1fr; /* Vídeos em uma única coluna em telas pequenas */
+  }
+
+  .videos-container video {
+    max-width: 100%; /* Vídeos ocupam toda a largura disponível */
+  }
+}
