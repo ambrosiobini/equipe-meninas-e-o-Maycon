@@ -1,4 +1,10 @@
 const respostasPersonalizadas = {
+  oi: "Olá! Como posso ajudar você hoje?",
+  ola: "Olá! Como posso ajudar você hoje?",
+  olá: "Olá! Como posso ajudar você hoje?",
+  bomdia : "Bom dia! Como posso ajudar você hoje?",
+  boatarde : "Boa tarde! Como posso ajudar você hoje?",
+  boaNoite : "Boa noite! Como posso ajudar você hoje?",
   matricula: "Você pode fazer a matrícula entrando em contato pelo WhatsApp ou visitando a secretaria.",
   horario: "As aulas começam às 7h30 e vão até 12h no turno da manhã.",
   curso: "Oferecemos Ensino Fundamental e Médio com foco em cidadania e preparação para o ENEM.",
